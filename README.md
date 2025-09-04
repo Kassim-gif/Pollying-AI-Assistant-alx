@@ -1,31 +1,36 @@
-# Pollying-AI-Assistant-alx
-ALX PROJECT
-# Polling App – AI Assistant Rules
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-1. 📁 Folder Structure
-- Poll-related components must go in `/app/polls/`
-- API routes live in `/app/api/`
-- Shared UI components go in `/app/components/`
+## Getting Started
 
-2. 🧩 Form Handling
-- Use `react-hook-form` for form logic
-- Use `shadcn/ui` for all UI elements (inputs, buttons, modals)
-- Validate forms with `zod` schemas
+First, run the development server:
 
-3. 🔐 Supabase Integration
-- Use Supabase for both auth and database
-- Auth logic is imported from `/lib/supabaseClient.ts`
-- Database operations use `supabase.from('polls')`
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-4. 🧠 Data & Naming
-- Poll objects must include: `id`, `question`, `options[]`, `created_at`
-- API endpoints follow REST: `GET /api/polls`, `POST /api/polls`
-- Use `camelCase` for variables, `PascalCase` for components
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-5. 🛠️ Scaffolding Expectations
-- When asked to scaffold a poll form:
-  - Create component in `/app/polls/NewPollForm.tsx`
-  - Use `react-hook-form`, `shadcn/ui`, and `zod`
-  - Submit via Supabase to `/api/polls`
-  - Include loading state and error handling
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
